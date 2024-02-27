@@ -25,6 +25,7 @@ public class CarController {
 //        return "show_cars_by_amount";
 //    }
 
+
 //    Хорошо, но давай объединим getCars и getCarsByAmount. Они делают то же самое в сущности
     @GetMapping("/cars")
     public String getCars(@RequestParam(value = "count", required = false) Integer count, Model model) {
